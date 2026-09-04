@@ -251,20 +251,34 @@ h2 {
 }
 
 .website-item h3 a {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
   color: var(--muted);
 }
 
-.dribbble-icon {
-  width: 28px;
-  height: 28px;
+.website-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.website-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.dribbble-icon,
+.website-icon {
+  width: 100px;
+  height: 100px;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   object-fit: cover;
   background: #ffffff;
   flex-shrink: 0;
+  margin-top: 4px;
+  order: 2;
 }
 
 .website-item h3 a:hover,
